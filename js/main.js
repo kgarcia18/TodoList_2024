@@ -1,29 +1,8 @@
-let tareas = [
-    {
-        estado : true,
-        id: 1,
-        texto: "Quitar todos los tornillos de la tap",
-    },
-    {
-        estado: false,
-        id: 2,
-        texto: "levantar la tapa con cuidado",
-    },
-    {
-        estado: true,
-        id: 3,
-        texto: "Desconectar la batería",
-    },
-    {
-        estado: false,
-        id: 4,
-        texto: "Identificar componentes",
-    }
-]
+import{tareas} from './data_todo.js';
 
 function cargar_tareas(){
 
-    let cuadro_de_tareas = document.querySelector(".root");
+    let cuadro_de_tareas = document.querySelector(".list_tareas");
 
     tareas.forEach((cada_tarea) => {
 
@@ -47,5 +26,24 @@ function cargar_tareas(){
     });
 
 }
-
 cargar_tareas();
+
+function cargar_botones(){
+    let caja_btn = document.querySelector(".botones");
+
+    caja_btn.innerHTML = `<div class="btn_mas"> + </div>`;
+
+}
+cargar_botones();
+
+function cargar_formulario(){
+    let ventana_formulario = document.querySelector(".formulario");
+    ventana_formulario.classList.add("activar_b")
+    ventana_formulario.innerHTML =`
+    
+    `;
+}
+
+// PROGRAMACION DEL BOTON
+let btn_formulario = document.querySelector(".btn_mas");
+btn_formulario.addEventListener("click", cargar_formulario);
