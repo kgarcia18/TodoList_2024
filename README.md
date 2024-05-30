@@ -7,5 +7,5 @@ El objetivo de este proyecto es crear una página web simple que permita a los u
 - CSS: Estilo para hacer la página visualmente atractiva.
 - JavaScript: Funcionalidad para interactuar con la lista de tareas.
 
-### Página
+### Página:
 https://kgarcia18.github.io/TodoList_2024/
