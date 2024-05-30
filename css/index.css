@@ -1,12 +1,16 @@
 .root {
-    width: 300px;
-    margin: auto;
-    margin-top: 10rem;
-
+    margin: 0 auto;
+    width: 40%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+    text-align: center;
+}
+h1{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
     align-items: center;
+    justify-content: center;
+    font-size: 4rem;
 }
 .div_tareas {
     width: 90%;
@@ -18,10 +22,9 @@
     display: flex;
     justify-content: space-between;
 }
-.botones {
-    width: 90%;
+.btn {
     display: flex;
-    justify-content: end;
+    justify-content: left;
 }
 .btn_mas {
     width: 5rem;
@@ -29,16 +32,15 @@
     background-color: blueviolet;
     color: white;
     font-size: 4rem;
-    font-weight: 900;
-    border-radius: 100%;
+    border-radius: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
 .btn_mas:hover {
-    font-size: 4.5rem;
-    transition: 0.3s;
+    background-color: rgb(73, 38, 233);
+    color: white;
 }
 .lista_tareas {
     width: 100%;
@@ -48,13 +50,76 @@
     align-items: center;
 }
 .formulario {
-    width: 100%;
-    height: 100vmax;
-    background-color: rgba(255, 0, 0, 0.377);
+    width: 30rem;
     position: absolute;
-    top: 0;
+    margin-top: 15%;
+    margin-left: 10%;
+    border: 1px solid black;
+    border-radius: 5px;
     display: none;
+    background-color: white;
 }
+.div_controles {
+    text-align: right;
+}
+
+.btn_cerrar {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn_cerrar:hover {
+    background-color: #c0392b;
+}
+.div_formulario h2{
+    margin-bottom: 1rem;
+}
+.div_formulario {
+    padding: 20px;
+}
+
+.entrada-tarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#categoria {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.btn-crear {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn-crear:hover {
+    background-color: #2980b9;
+}
+
+
 
 .ocultar {
     display: none;
